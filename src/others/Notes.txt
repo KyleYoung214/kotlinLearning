@@ -9,11 +9,12 @@ For Char
 \$
 
 
-a==b -> a.equals(b)
+a==b -> a?.equals(b)?:(b==null)
 a===b 比较对象
 
 default class is final public
 
+import xx.xxx.xxxx as yyyy
 
 修饰符           类成员            顶层声明
 public        所有地方可见        所有地方可见
@@ -30,3 +31,27 @@ internal 在字节码中会变成public
 
 lambda内部没有this。L阿米巴大众this引用指向是包围它的类。
 匿名对象里，this指向该对象实例。
+
+
+java         kotlin
+int[]        IntArray
+short[]      ShortArray
+long[]       LongArray
+float[]      FloatArray
+double[]     DoubleArray
+char[]       CharArray
+
+val runtimeConst = 3
+const val compileConst = 2
+
+lambda  { [parameters] -> [function body, last line is the return value] }
+lambda 用()调用，相当于invoke
+
+
+shl —— 带符号左移
+shr —— 带符号右移
+ushr —— 无符号右移
+and —— 按位与
+or —— 按位或
+xor —— 按位异或
+inv —— 按位取反
