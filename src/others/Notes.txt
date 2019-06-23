@@ -55,3 +55,34 @@ and —— 按位与
 or —— 按位或
 xor —— 按位异或
 inv —— 按位取反
+
+args.forEach ForEach@{
+    if(condition)return@ForEach
+    ...
+}
+
+Outter@for(...){
+    Inner@while(condition){
+        if(condition2)break@Outter
+    }
+}
+
+array -> vararg
+val array = intArrayOf(1,2,3)
+*array
+
+接口方法冲突
+super<[父类(接口)名]>.[方法名]([参数列表])
+
+方法重载@JvmOverloads
+
+data class   componentN
+allOpen noArg plugins
+
+匿名内部类可继承父类、实现多个接口, object: A, {...}
+
+高阶函数：传入或者返回函数的函数
+函数引用::println
+带有Receiver的引用 xxx::method
+
+尾递归优化 调用自身后无其他操作 关键字tailrec
